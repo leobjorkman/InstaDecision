@@ -1,0 +1,35 @@
+From VotePage.js: 
+
+/* Using Dummy Data:
+
+  const [restData, setRestData] = useState(null);
+  
+  React.useEffect(() => {
+    console.log("Effect", poll);
+    if (poll) {
+      fetch("http://localhost:5000/test", {
+        method: "POST",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: {
+          like: poll.like,
+          dislike: poll.dislike,
+          pricepoint: poll.priceLevel,
+          numberOfGroups: parseInt(poll.numMembers),
+        },
+      })
+        .then((response) => response.json())
+        .then((respJSON) => {
+          // console.log("respJSON", respJSON.restaurants[0].name);
+          // console.log("respJSON.restaurants", respJSON.restaurants);
+          setRestData(respJSON.restaurants);
+          setRestData(respJSON.restaurants);
+        });
+    }
+  }, [poll]); 
+
+  if (restData) {
+    console.log("RestData", restData);
+  }
+  */
